@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="20086" systemVersion="21C52" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Answer" representedClassName="Answer" syncable="YES" codeGenerationType="class">
+        <attribute name="answer" attributeType="String"/>
+        <relationship name="question" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Question" inverseName="answers" inverseEntity="Question"/>
+        <relationship name="weighing" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="Weighing" inverseName="answer" inverseEntity="Weighing"/>
+    </entity>
+    <entity name="Knowledge_Area" representedClassName="Knowledge_Area" syncable="YES" codeGenerationType="class">
+        <attribute name="area" attributeType="String"/>
+        <relationship name="university_career" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="University_Career" inverseName="knowledge" inverseEntity="University_Career"/>
+        <relationship name="weighing" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Weighing" inverseName="knowledge" inverseEntity="Weighing"/>
+    </entity>
+    <entity name="Question" representedClassName="Question" syncable="YES" codeGenerationType="class">
+        <attribute name="question" attributeType="String"/>
+        <relationship name="answers" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Answer" inverseName="question" inverseEntity="Answer"/>
+    </entity>
+    <entity name="University" representedClassName="University" syncable="YES" codeGenerationType="class">
+        <attribute name="university" attributeType="String"/>
+        <relationship name="university_career" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="University_Career" inverseName="university" inverseEntity="University_Career"/>
+    </entity>
+    <entity name="University_Career" representedClassName="University_Career" syncable="YES" codeGenerationType="class">
+        <attribute name="career" optional="YES" attributeType="String"/>
+        <relationship name="knowledge" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Knowledge_Area" inverseName="university_career" inverseEntity="Knowledge_Area"/>
+        <relationship name="university" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="University" inverseName="university_career" inverseEntity="University"/>
+    </entity>
+    <entity name="Weighing" representedClassName="Weighing" syncable="YES" codeGenerationType="class">
+        <attribute name="weight" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <relationship name="answer" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Answer" inverseName="weighing" inverseEntity="Answer"/>
+        <relationship name="knowledge" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="Knowledge_Area" inverseName="weighing" inverseEntity="Knowledge_Area"/>
+    </entity>
+    <elements>
+        <element name="Answer" positionX="-112.5" positionY="34.23828125" width="128" height="74"/>
+        <element name="Knowledge_Area" positionX="218.9453125" positionY="-21.69140625" width="128" height="88"/>
+        <element name="Question" positionX="40.29296875" positionY="-67.32421875" width="128" height="73"/>
+        <element name="University" positionX="328.92578125" positionY="191.1328125" width="128" height="73"/>
+        <element name="University_Career" positionX="396.83203125" positionY="26.12109375" width="128" height="88"/>
+        <element name="Weighing" positionX="75.54296875" positionY="167.69140625" width="128" height="74"/>
+    </elements>
+</model>

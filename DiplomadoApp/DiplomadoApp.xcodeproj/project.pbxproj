@@ -1,0 +1,906 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5372A746D6B83A5AA6C6688E /* Pods_DiplomadoAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9DDF0094B4EE4AE5D170A198 /* Pods_DiplomadoAppTests.framework */; };
+		58919905C47E78B2066D985B /* Pods_DiplomadoApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C06526966FB275DE5919650 /* Pods_DiplomadoApp.framework */; };
+		A323D595288273A1001DF61D /* UniversityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A323D594288273A1001DF61D /* UniversityViewController.swift */; };
+		A323D597288331BC001DF61D /* ListResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A323D596288331BC001DF61D /* ListResultViewController.swift */; };
+		A3389DEE287BAA3900145E39 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3389DED287BAA3900145E39 /* AppDelegate.swift */; };
+		A3389DF0287BAA3900145E39 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3389DEF287BAA3900145E39 /* SceneDelegate.swift */; };
+		A3389DF2287BAA3900145E39 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3389DF1287BAA3900145E39 /* LoginViewController.swift */; };
+		A3389DF5287BAA3900145E39 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A3389DF3287BAA3900145E39 /* Main.storyboard */; };
+		A3389DF8287BAA3900145E39 /* DiplomadoApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A3389DF6287BAA3900145E39 /* DiplomadoApp.xcdatamodeld */; };
+		A3389DFA287BAA3A00145E39 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A3389DF9287BAA3A00145E39 /* Assets.xcassets */; };
+		A3389DFD287BAA3A00145E39 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A3389DFB287BAA3A00145E39 /* LaunchScreen.storyboard */; };
+		A3389E08287BAA3A00145E39 /* DiplomadoAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3389E07287BAA3A00145E39 /* DiplomadoAppTests.swift */; };
+		A3389E12287BAA3A00145E39 /* DiplomadoAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3389E11287BAA3A00145E39 /* DiplomadoAppUITests.swift */; };
+		A3389E14287BAA3A00145E39 /* DiplomadoAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3389E13287BAA3A00145E39 /* DiplomadoAppUITestsLaunchTests.swift */; };
+		A3389E22287BB53600145E39 /* DataBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3389E21287BB53600145E39 /* DataBase.swift */; };
+		A3389E39287BE24300145E39 /* DiplomadoApp.sqlite-shm in Resources */ = {isa = PBXBuildFile; fileRef = A3389E36287BE24300145E39 /* DiplomadoApp.sqlite-shm */; };
+		A3389E3A287BE24300145E39 /* DiplomadoApp.sqlite-wal in Resources */ = {isa = PBXBuildFile; fileRef = A3389E37287BE24300145E39 /* DiplomadoApp.sqlite-wal */; };
+		A3389E3B287BE24300145E39 /* DiplomadoApp.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = A3389E38287BE24300145E39 /* DiplomadoApp.sqlite */; };
+		A3389E3D287BEC7900145E39 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A3389E3C287BEC7900145E39 /* GoogleService-Info.plist */; };
+		A3389E40287BF2B500145E39 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3389E3F287BF2B500145E39 /* RegisterViewController.swift */; };
+		A3389E43287BF4D100145E39 /* UIViewController+Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3389E42287BF4D100145E39 /* UIViewController+Util.swift */; };
+		A3389E46287C6F3800145E39 /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3389E45287C6F3800145E39 /* TestViewController.swift */; };
+		A3389E49287C6F8600145E39 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3389E48287C6F8600145E39 /* ResultViewController.swift */; };
+		A3389E4C287C713C00145E39 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3389E4B287C713C00145E39 /* TabBarViewController.swift */; };
+		A3389E4E287C812400145E39 /* FormTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3389E4D287C812400145E39 /* FormTestViewController.swift */; };
+		A3389E50287C847400145E39 /* PageTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3389E4F287C847400145E39 /* PageTestViewController.swift */; };
+		A3D23BCD287FB5AE00D053AD /* Array+Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3D23BCC287FB5AE00D053AD /* Array+Util.swift */; };
+		A3D23BD0287FD1BF00D053AD /* FormTestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A3D23BCF287FD1BF00D053AD /* FormTestViewController.xib */; };
+		A3D23BD5287FD63300D053AD /* FormTestTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3D23BD3287FD63300D053AD /* FormTestTableViewCell.swift */; };
+		A3D23BD6287FD63300D053AD /* FormTestTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A3D23BD4287FD63300D053AD /* FormTestTableViewCell.xib */; };
+		F58E39FE3202C02BC1FA7625 /* Pods_DiplomadoApp_DiplomadoAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 954752ADB22583CF14F90443 /* Pods_DiplomadoApp_DiplomadoAppUITests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A3389E04287BAA3A00145E39 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A3389DE2287BAA3900145E39 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A3389DE9287BAA3900145E39;
+			remoteInfo = DiplomadoApp;
+		};
+		A3389E0E287BAA3A00145E39 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A3389DE2287BAA3900145E39 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A3389DE9287BAA3900145E39;
+			remoteInfo = DiplomadoApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0C06526966FB275DE5919650 /* Pods_DiplomadoApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DiplomadoApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1259C2D87ECA63DDEC1E4770 /* Pods-DiplomadoApp-DiplomadoAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DiplomadoApp-DiplomadoAppUITests.debug.xcconfig"; path = "Target Support Files/Pods-DiplomadoApp-DiplomadoAppUITests/Pods-DiplomadoApp-DiplomadoAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		5A09D6297094343AFA46190D /* Pods-DiplomadoAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DiplomadoAppTests.debug.xcconfig"; path = "Target Support Files/Pods-DiplomadoAppTests/Pods-DiplomadoAppTests.debug.xcconfig"; sourceTree = "<group>"; };
+		954752ADB22583CF14F90443 /* Pods_DiplomadoApp_DiplomadoAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DiplomadoApp_DiplomadoAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9DDF0094B4EE4AE5D170A198 /* Pods_DiplomadoAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DiplomadoAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A323D594288273A1001DF61D /* UniversityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UniversityViewController.swift; sourceTree = "<group>"; };
+		A323D596288331BC001DF61D /* ListResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListResultViewController.swift; sourceTree = "<group>"; };
+		A3389DEA287BAA3900145E39 /* DiplomadoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DiplomadoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A3389DED287BAA3900145E39 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A3389DEF287BAA3900145E39 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		A3389DF1287BAA3900145E39 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		A3389DF4287BAA3900145E39 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A3389DF7287BAA3900145E39 /* DiplomadoApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DiplomadoApp.xcdatamodel; sourceTree = "<group>"; };
+		A3389DF9287BAA3A00145E39 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A3389DFC287BAA3A00145E39 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A3389DFE287BAA3A00145E39 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A3389E03287BAA3A00145E39 /* DiplomadoAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DiplomadoAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A3389E07287BAA3A00145E39 /* DiplomadoAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiplomadoAppTests.swift; sourceTree = "<group>"; };
+		A3389E0D287BAA3A00145E39 /* DiplomadoAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DiplomadoAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A3389E11287BAA3A00145E39 /* DiplomadoAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiplomadoAppUITests.swift; sourceTree = "<group>"; };
+		A3389E13287BAA3A00145E39 /* DiplomadoAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiplomadoAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		A3389E21287BB53600145E39 /* DataBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataBase.swift; sourceTree = "<group>"; };
+		A3389E36287BE24300145E39 /* DiplomadoApp.sqlite-shm */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DiplomadoApp.sqlite-shm"; sourceTree = "<group>"; };
+		A3389E37287BE24300145E39 /* DiplomadoApp.sqlite-wal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "DiplomadoApp.sqlite-wal"; sourceTree = "<group>"; };
+		A3389E38287BE24300145E39 /* DiplomadoApp.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = DiplomadoApp.sqlite; sourceTree = "<group>"; };
+		A3389E3C287BEC7900145E39 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		A3389E3F287BF2B500145E39 /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		A3389E42287BF4D100145E39 /* UIViewController+Util.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Util.swift"; sourceTree = "<group>"; };
+		A3389E45287C6F3800145E39 /* TestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
+		A3389E48287C6F8600145E39 /* ResultViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
+		A3389E4B287C713C00145E39 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		A3389E4D287C812400145E39 /* FormTestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormTestViewController.swift; sourceTree = "<group>"; };
+		A3389E4F287C847400145E39 /* PageTestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageTestViewController.swift; sourceTree = "<group>"; };
+		A3D23BCC287FB5AE00D053AD /* Array+Util.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+Util.swift"; sourceTree = "<group>"; };
+		A3D23BCF287FD1BF00D053AD /* FormTestViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FormTestViewController.xib; sourceTree = "<group>"; };
+		A3D23BD3287FD63300D053AD /* FormTestTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormTestTableViewCell.swift; sourceTree = "<group>"; };
+		A3D23BD4287FD63300D053AD /* FormTestTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FormTestTableViewCell.xib; sourceTree = "<group>"; };
+		BC0D46A0A3D6F2C352D44DDF /* Pods-DiplomadoApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DiplomadoApp.release.xcconfig"; path = "Target Support Files/Pods-DiplomadoApp/Pods-DiplomadoApp.release.xcconfig"; sourceTree = "<group>"; };
+		CD745B4A8720F958EE96FD1C /* Pods-DiplomadoAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DiplomadoAppTests.release.xcconfig"; path = "Target Support Files/Pods-DiplomadoAppTests/Pods-DiplomadoAppTests.release.xcconfig"; sourceTree = "<group>"; };
+		D4FC1AC94A5E98805AAB12E7 /* Pods-DiplomadoApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DiplomadoApp.debug.xcconfig"; path = "Target Support Files/Pods-DiplomadoApp/Pods-DiplomadoApp.debug.xcconfig"; sourceTree = "<group>"; };
+		FB397C691B734024A0F37E56 /* Pods-DiplomadoApp-DiplomadoAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DiplomadoApp-DiplomadoAppUITests.release.xcconfig"; path = "Target Support Files/Pods-DiplomadoApp-DiplomadoAppUITests/Pods-DiplomadoApp-DiplomadoAppUITests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A3389DE7287BAA3900145E39 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				58919905C47E78B2066D985B /* Pods_DiplomadoApp.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A3389E00287BAA3A00145E39 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5372A746D6B83A5AA6C6688E /* Pods_DiplomadoAppTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A3389E0A287BAA3A00145E39 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F58E39FE3202C02BC1FA7625 /* Pods_DiplomadoApp_DiplomadoAppUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1F2B884ECB35B253BF2F6AF2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D4FC1AC94A5E98805AAB12E7 /* Pods-DiplomadoApp.debug.xcconfig */,
+				BC0D46A0A3D6F2C352D44DDF /* Pods-DiplomadoApp.release.xcconfig */,
+				1259C2D87ECA63DDEC1E4770 /* Pods-DiplomadoApp-DiplomadoAppUITests.debug.xcconfig */,
+				FB397C691B734024A0F37E56 /* Pods-DiplomadoApp-DiplomadoAppUITests.release.xcconfig */,
+				5A09D6297094343AFA46190D /* Pods-DiplomadoAppTests.debug.xcconfig */,
+				CD745B4A8720F958EE96FD1C /* Pods-DiplomadoAppTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		A3389DE1287BAA3900145E39 = {
+			isa = PBXGroup;
+			children = (
+				A3389DEC287BAA3900145E39 /* DiplomadoApp */,
+				A3389E06287BAA3A00145E39 /* DiplomadoAppTests */,
+				A3389E10287BAA3A00145E39 /* DiplomadoAppUITests */,
+				A3389DEB287BAA3900145E39 /* Products */,
+				1F2B884ECB35B253BF2F6AF2 /* Pods */,
+				EE037A6908FC5491C5485B8F /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		A3389DEB287BAA3900145E39 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A3389DEA287BAA3900145E39 /* DiplomadoApp.app */,
+				A3389E03287BAA3A00145E39 /* DiplomadoAppTests.xctest */,
+				A3389E0D287BAA3A00145E39 /* DiplomadoAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A3389DEC287BAA3900145E39 /* DiplomadoApp */ = {
+			isa = PBXGroup;
+			children = (
+				A3389E4A287C70FF00145E39 /* TabBar */,
+				A3389E47287C6F6D00145E39 /* Result */,
+				A3389E44287C6F1700145E39 /* Test */,
+				A3389E41287BF4BF00145E39 /* Util */,
+				A3389E3E287BF0A900145E39 /* Login */,
+				A3389E20287BB52000145E39 /* DataBase */,
+				A3389DED287BAA3900145E39 /* AppDelegate.swift */,
+				A3389DEF287BAA3900145E39 /* SceneDelegate.swift */,
+				A3389DF3287BAA3900145E39 /* Main.storyboard */,
+				A3389DF9287BAA3A00145E39 /* Assets.xcassets */,
+				A3389DFB287BAA3A00145E39 /* LaunchScreen.storyboard */,
+				A3389E3C287BEC7900145E39 /* GoogleService-Info.plist */,
+				A3389DFE287BAA3A00145E39 /* Info.plist */,
+				A3389DF6287BAA3900145E39 /* DiplomadoApp.xcdatamodeld */,
+			);
+			path = DiplomadoApp;
+			sourceTree = "<group>";
+		};
+		A3389E06287BAA3A00145E39 /* DiplomadoAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				A3389E07287BAA3A00145E39 /* DiplomadoAppTests.swift */,
+			);
+			path = DiplomadoAppTests;
+			sourceTree = "<group>";
+		};
+		A3389E10287BAA3A00145E39 /* DiplomadoAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A3389E11287BAA3A00145E39 /* DiplomadoAppUITests.swift */,
+				A3389E13287BAA3A00145E39 /* DiplomadoAppUITestsLaunchTests.swift */,
+			);
+			path = DiplomadoAppUITests;
+			sourceTree = "<group>";
+		};
+		A3389E20287BB52000145E39 /* DataBase */ = {
+			isa = PBXGroup;
+			children = (
+				A3389E38287BE24300145E39 /* DiplomadoApp.sqlite */,
+				A3389E36287BE24300145E39 /* DiplomadoApp.sqlite-shm */,
+				A3389E37287BE24300145E39 /* DiplomadoApp.sqlite-wal */,
+				A3389E21287BB53600145E39 /* DataBase.swift */,
+			);
+			path = DataBase;
+			sourceTree = "<group>";
+		};
+		A3389E3E287BF0A900145E39 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				A3389E3F287BF2B500145E39 /* RegisterViewController.swift */,
+				A3389DF1287BAA3900145E39 /* LoginViewController.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		A3389E41287BF4BF00145E39 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				A3389E42287BF4D100145E39 /* UIViewController+Util.swift */,
+				A3D23BCC287FB5AE00D053AD /* Array+Util.swift */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		A3389E44287C6F1700145E39 /* Test */ = {
+			isa = PBXGroup;
+			children = (
+				A3D23BCE287FD1A600D053AD /* FormTest */,
+				A3389E45287C6F3800145E39 /* TestViewController.swift */,
+				A3389E4F287C847400145E39 /* PageTestViewController.swift */,
+			);
+			path = Test;
+			sourceTree = "<group>";
+		};
+		A3389E47287C6F6D00145E39 /* Result */ = {
+			isa = PBXGroup;
+			children = (
+				A3389E48287C6F8600145E39 /* ResultViewController.swift */,
+				A323D594288273A1001DF61D /* UniversityViewController.swift */,
+				A323D596288331BC001DF61D /* ListResultViewController.swift */,
+			);
+			path = Result;
+			sourceTree = "<group>";
+		};
+		A3389E4A287C70FF00145E39 /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				A3389E4B287C713C00145E39 /* TabBarViewController.swift */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
+		A3D23BCE287FD1A600D053AD /* FormTest */ = {
+			isa = PBXGroup;
+			children = (
+				A3389E4D287C812400145E39 /* FormTestViewController.swift */,
+				A3D23BCF287FD1BF00D053AD /* FormTestViewController.xib */,
+				A3D23BD3287FD63300D053AD /* FormTestTableViewCell.swift */,
+				A3D23BD4287FD63300D053AD /* FormTestTableViewCell.xib */,
+			);
+			path = FormTest;
+			sourceTree = "<group>";
+		};
+		EE037A6908FC5491C5485B8F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0C06526966FB275DE5919650 /* Pods_DiplomadoApp.framework */,
+				954752ADB22583CF14F90443 /* Pods_DiplomadoApp_DiplomadoAppUITests.framework */,
+				9DDF0094B4EE4AE5D170A198 /* Pods_DiplomadoAppTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A3389DE9287BAA3900145E39 /* DiplomadoApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A3389E17287BAA3A00145E39 /* Build configuration list for PBXNativeTarget "DiplomadoApp" */;
+			buildPhases = (
+				29DB51DE4622D94237AD13DE /* [CP] Check Pods Manifest.lock */,
+				A3389DE6287BAA3900145E39 /* Sources */,
+				A3389DE7287BAA3900145E39 /* Frameworks */,
+				A3389DE8287BAA3900145E39 /* Resources */,
+				AD5CA0023B9E94CC551AE159 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DiplomadoApp;
+			productName = DiplomadoApp;
+			productReference = A3389DEA287BAA3900145E39 /* DiplomadoApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A3389E02287BAA3A00145E39 /* DiplomadoAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A3389E1A287BAA3A00145E39 /* Build configuration list for PBXNativeTarget "DiplomadoAppTests" */;
+			buildPhases = (
+				E55970F08E103E54FAF73CD9 /* [CP] Check Pods Manifest.lock */,
+				A3389DFF287BAA3A00145E39 /* Sources */,
+				A3389E00287BAA3A00145E39 /* Frameworks */,
+				A3389E01287BAA3A00145E39 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A3389E05287BAA3A00145E39 /* PBXTargetDependency */,
+			);
+			name = DiplomadoAppTests;
+			productName = DiplomadoAppTests;
+			productReference = A3389E03287BAA3A00145E39 /* DiplomadoAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A3389E0C287BAA3A00145E39 /* DiplomadoAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A3389E1D287BAA3A00145E39 /* Build configuration list for PBXNativeTarget "DiplomadoAppUITests" */;
+			buildPhases = (
+				E2F0C1626CED1B213FE0D15B /* [CP] Check Pods Manifest.lock */,
+				A3389E09287BAA3A00145E39 /* Sources */,
+				A3389E0A287BAA3A00145E39 /* Frameworks */,
+				A3389E0B287BAA3A00145E39 /* Resources */,
+				531D95671C61DA1D5CFFD26F /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A3389E0F287BAA3A00145E39 /* PBXTargetDependency */,
+			);
+			name = DiplomadoAppUITests;
+			productName = DiplomadoAppUITests;
+			productReference = A3389E0D287BAA3A00145E39 /* DiplomadoAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A3389DE2287BAA3900145E39 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1330;
+				LastUpgradeCheck = 1330;
+				TargetAttributes = {
+					A3389DE9287BAA3900145E39 = {
+						CreatedOnToolsVersion = 13.3.1;
+					};
+					A3389E02287BAA3A00145E39 = {
+						CreatedOnToolsVersion = 13.3.1;
+						TestTargetID = A3389DE9287BAA3900145E39;
+					};
+					A3389E0C287BAA3A00145E39 = {
+						CreatedOnToolsVersion = 13.3.1;
+						TestTargetID = A3389DE9287BAA3900145E39;
+					};
+				};
+			};
+			buildConfigurationList = A3389DE5287BAA3900145E39 /* Build configuration list for PBXProject "DiplomadoApp" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A3389DE1287BAA3900145E39;
+			productRefGroup = A3389DEB287BAA3900145E39 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A3389DE9287BAA3900145E39 /* DiplomadoApp */,
+				A3389E02287BAA3A00145E39 /* DiplomadoAppTests */,
+				A3389E0C287BAA3A00145E39 /* DiplomadoAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A3389DE8287BAA3900145E39 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A3389DFD287BAA3A00145E39 /* LaunchScreen.storyboard in Resources */,
+				A3389DFA287BAA3A00145E39 /* Assets.xcassets in Resources */,
+				A3389E39287BE24300145E39 /* DiplomadoApp.sqlite-shm in Resources */,
+				A3389E3A287BE24300145E39 /* DiplomadoApp.sqlite-wal in Resources */,
+				A3389DF5287BAA3900145E39 /* Main.storyboard in Resources */,
+				A3389E3B287BE24300145E39 /* DiplomadoApp.sqlite in Resources */,
+				A3D23BD0287FD1BF00D053AD /* FormTestViewController.xib in Resources */,
+				A3D23BD6287FD63300D053AD /* FormTestTableViewCell.xib in Resources */,
+				A3389E3D287BEC7900145E39 /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A3389E01287BAA3A00145E39 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A3389E0B287BAA3A00145E39 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		29DB51DE4622D94237AD13DE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DiplomadoApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		531D95671C61DA1D5CFFD26F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DiplomadoApp-DiplomadoAppUITests/Pods-DiplomadoApp-DiplomadoAppUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DiplomadoApp-DiplomadoAppUITests/Pods-DiplomadoApp-DiplomadoAppUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DiplomadoApp-DiplomadoAppUITests/Pods-DiplomadoApp-DiplomadoAppUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AD5CA0023B9E94CC551AE159 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DiplomadoApp/Pods-DiplomadoApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DiplomadoApp/Pods-DiplomadoApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DiplomadoApp/Pods-DiplomadoApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E2F0C1626CED1B213FE0D15B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DiplomadoApp-DiplomadoAppUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E55970F08E103E54FAF73CD9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DiplomadoAppTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A3389DE6287BAA3900145E39 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A3389DF2287BAA3900145E39 /* LoginViewController.swift in Sources */,
+				A3389DEE287BAA3900145E39 /* AppDelegate.swift in Sources */,
+				A3389E46287C6F3800145E39 /* TestViewController.swift in Sources */,
+				A323D597288331BC001DF61D /* ListResultViewController.swift in Sources */,
+				A3389DF0287BAA3900145E39 /* SceneDelegate.swift in Sources */,
+				A3D23BD5287FD63300D053AD /* FormTestTableViewCell.swift in Sources */,
+				A3389E43287BF4D100145E39 /* UIViewController+Util.swift in Sources */,
+				A3389E40287BF2B500145E39 /* RegisterViewController.swift in Sources */,
+				A3D23BCD287FB5AE00D053AD /* Array+Util.swift in Sources */,
+				A3389E22287BB53600145E39 /* DataBase.swift in Sources */,
+				A3389E50287C847400145E39 /* PageTestViewController.swift in Sources */,
+				A3389DF8287BAA3900145E39 /* DiplomadoApp.xcdatamodeld in Sources */,
+				A3389E4E287C812400145E39 /* FormTestViewController.swift in Sources */,
+				A3389E4C287C713C00145E39 /* TabBarViewController.swift in Sources */,
+				A323D595288273A1001DF61D /* UniversityViewController.swift in Sources */,
+				A3389E49287C6F8600145E39 /* ResultViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A3389DFF287BAA3A00145E39 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A3389E08287BAA3A00145E39 /* DiplomadoAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A3389E09287BAA3A00145E39 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A3389E14287BAA3A00145E39 /* DiplomadoAppUITestsLaunchTests.swift in Sources */,
+				A3389E12287BAA3A00145E39 /* DiplomadoAppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A3389E05287BAA3A00145E39 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A3389DE9287BAA3900145E39 /* DiplomadoApp */;
+			targetProxy = A3389E04287BAA3A00145E39 /* PBXContainerItemProxy */;
+		};
+		A3389E0F287BAA3A00145E39 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A3389DE9287BAA3900145E39 /* DiplomadoApp */;
+			targetProxy = A3389E0E287BAA3A00145E39 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A3389DF3287BAA3900145E39 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A3389DF4287BAA3900145E39 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A3389DFB287BAA3A00145E39 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A3389DFC287BAA3A00145E39 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A3389E15287BAA3A00145E39 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A3389E16287BAA3A00145E39 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A3389E18287BAA3A00145E39 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D4FC1AC94A5E98805AAB12E7 /* Pods-DiplomadoApp.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3YC5DK272K;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DiplomadoApp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ean.DiplomadoApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A3389E19287BAA3A00145E39 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BC0D46A0A3D6F2C352D44DDF /* Pods-DiplomadoApp.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3YC5DK272K;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DiplomadoApp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ean.DiplomadoApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A3389E1B287BAA3A00145E39 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5A09D6297094343AFA46190D /* Pods-DiplomadoAppTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3YC5DK272K;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ean.DiplomadoAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DiplomadoApp.app/DiplomadoApp";
+			};
+			name = Debug;
+		};
+		A3389E1C287BAA3A00145E39 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CD745B4A8720F958EE96FD1C /* Pods-DiplomadoAppTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3YC5DK272K;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ean.DiplomadoAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DiplomadoApp.app/DiplomadoApp";
+			};
+			name = Release;
+		};
+		A3389E1E287BAA3A00145E39 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1259C2D87ECA63DDEC1E4770 /* Pods-DiplomadoApp-DiplomadoAppUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3YC5DK272K;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ean.DiplomadoAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = DiplomadoApp;
+			};
+			name = Debug;
+		};
+		A3389E1F287BAA3A00145E39 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FB397C691B734024A0F37E56 /* Pods-DiplomadoApp-DiplomadoAppUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3YC5DK272K;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ean.DiplomadoAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = DiplomadoApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A3389DE5287BAA3900145E39 /* Build configuration list for PBXProject "DiplomadoApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A3389E15287BAA3A00145E39 /* Debug */,
+				A3389E16287BAA3A00145E39 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A3389E17287BAA3A00145E39 /* Build configuration list for PBXNativeTarget "DiplomadoApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A3389E18287BAA3A00145E39 /* Debug */,
+				A3389E19287BAA3A00145E39 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A3389E1A287BAA3A00145E39 /* Build configuration list for PBXNativeTarget "DiplomadoAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A3389E1B287BAA3A00145E39 /* Debug */,
+				A3389E1C287BAA3A00145E39 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A3389E1D287BAA3A00145E39 /* Build configuration list for PBXNativeTarget "DiplomadoAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A3389E1E287BAA3A00145E39 /* Debug */,
+				A3389E1F287BAA3A00145E39 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		A3389DF6287BAA3900145E39 /* DiplomadoApp.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				A3389DF7287BAA3900145E39 /* DiplomadoApp.xcdatamodel */,
+			);
+			currentVersion = A3389DF7287BAA3900145E39 /* DiplomadoApp.xcdatamodel */;
+			path = DiplomadoApp.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = A3389DE2287BAA3900145E39 /* Project object */;
+}
